@@ -1,0 +1,38 @@
+
+\newcommand{\school}[3]{%
+  \fontsize{12pt}{12pt}\selectfont
+  \textbf{#1}\newline
+  \footnotesize
+  \textit{#3}, #2
+  \normalsize
+}
+
+\newcommand{\job}[2]{%
+  \fontsize{12pt}{12pt}\selectfont
+  \textbf{#1}\newline
+  \footnotesize
+  #2
+  \normalsize
+
+}
+
+\newcommand{\project}[3]{%
+  \fontsize{12pt}{12pt}\selectfont
+  \textbf{#1}\newline
+  \footnotesize
+    #2 (#3) 
+  
+}
+
+\newcommand{\knowledge}[3]{%
+  \setcounter{stars}{0}
+  \textbf{#1} \quad
+  \loop
+    \raisebox{1pt}{\scriptsize{\faIcon[regular]{star}}}%
+    \stepcounter{stars}%
+    \ifnum\value{stars}<#2
+  \repeat
+  \ifx&#3&\else
+    \raisebox{1pt}{\scriptsize{\faIcon[regular]{star-half}}}%
+  \fi
+}

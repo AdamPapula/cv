@@ -1,0 +1,27 @@
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,      
+  urlcolor=black,
+  pdftitle={Curriculum vit\ae},
+}
+
+\pagenumbering{gobble}
+\newcounter{stars}
+
+\setlist[itemize]{leftmargin=*}
+\linespread{1.15}
+\geometry{%
+    left={1.5cm},
+    top={1.5cm},
+    right={1.5cm},
+    bottom={1.5cm}
+}
+
+% hlavní nadpis
+\titleformat{\section}{\normalfont\Large\normalseries}{}{0em}{#1}
+\titlespacing{\section}{0pt}{\parskip}{5pt}
+
+
+% nadpis části
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{\MakeUppercase{#1}\quad\xrfill[0.7ex]{1pt}}
+\titlespacing{\subsection}{0pt}{\parskip}{5pt}
